@@ -1,6 +1,6 @@
 /** @format */
 
-import { generateCharCounter } from "./beanCounting";
+import { generateCharCounter } from "../utils/generateCharCounter.js";
 
 export const charCount = (str, character = "") => {
   const charCounter = generateCharCounter(character);
