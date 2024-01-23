@@ -14,5 +14,3 @@ export const printNumbers = (firstNumber, secondNumber, counter = 1) => {
   }
   return (result += "," + printNumbers(smallest + counter, largest));
 };
-
-console.log({ first: printNumbers(1, 10) });
