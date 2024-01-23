@@ -8,3 +8,10 @@ export const areValuesNaN = (base, exponent) => {
   if (exponent < 0) return true;
   return false;
 };
+export const isValidInput = (firstNumber, secondNumber) => {
+  if (firstNumber === undefined || secondNumber === undefined) return false;
+  if (firstNumber === null || secondNumber === null) return false;
+  if (Number.isNaN(Number(firstNumber)) || Number.isNaN(Number(secondNumber)))
+    return false;
+  return true;
+};
